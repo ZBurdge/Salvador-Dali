@@ -23,8 +23,17 @@
   margin-top: 36px;
 }
 
+.grid-4-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 36px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.secondary {
+  background-color: #292929;
 }
 
 .card {
@@ -60,6 +69,11 @@
 
 body {
   background-color: black;
+  font-family: "Noto Serif Display", serif;
+}
+
+h1 {
+  font-family: "Nothing You Could Do", cursive;
 }
 
 header {
@@ -126,7 +140,6 @@ main h3 {
   line-height: 1.5;
   letter-spacing: 5px;
   color: white;
-
   text-transform: uppercase;
   margin: 0px;
 }
@@ -145,4 +158,58 @@ main h5 {
   line-height: 1;
   color: white;
   margin: 0px;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/images/egg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 28px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
+  }
 }
